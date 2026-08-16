@@ -1,0 +1,13 @@
+{
+  "display_name": "AI 帮答隔离器",
+  "loading_order": 120,
+  "requires": [],
+  "optional": [],
+  "dependencies": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Custom build",
+  "version": "0.1.0",
+  "auto_update": false,
+  "minimum_client_version": "1.18.0"
+}
