@@ -4,6 +4,14 @@
     gap: 2px;
 }
 
+#rightSendForm > #ai_reply_isolator_container {
+    width: auto;
+    min-width: max-content;
+    height: var(--bottomFormBlockSize);
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+}
+
 #ai_reply_isolator_btn,
 #ai_reply_isolator_settings {
     min-width: 34px;
