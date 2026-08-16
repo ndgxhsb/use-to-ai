@@ -1,0 +1,123 @@
+#ai_reply_isolator_container {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+#ai_reply_isolator_btn,
+#ai_reply_isolator_settings {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ai_reply_isolator_settings {
+    min-width: 26px;
+    width: 26px;
+    opacity: 0.72;
+    font-size: 0.85em;
+}
+
+#ai_reply_isolator_settings:hover {
+    opacity: 1;
+}
+
+#ai_reply_isolator_dialog {
+    width: min(560px, 92vw);
+    max-height: 85vh;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 12px;
+    background: var(--SmartThemeBlurTintColor);
+    color: var(--SmartThemeBodyColor);
+    padding: 0;
+}
+
+#ai_reply_isolator_dialog::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.airi-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+}
+
+.airi-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 1.1em;
+}
+
+.airi-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.airi-field input,
+.airi-field select {
+    width: 100%;
+}
+
+.airi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.airi-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.airi-check input {
+    margin-top: 4px;
+}
+
+.airi-check span {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.airi-check small,
+.airi-note {
+    opacity: 0.75;
+    line-height: 1.45;
+}
+
+.airi-note {
+    padding: 10px;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 8px;
+}
+
+.airi-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+@media (max-width: 600px) {
+    .airi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #ai_reply_isolator_btn {
+        width: 32px;
+        min-width: 32px;
+    }
+
+    #ai_reply_isolator_settings {
+        width: 24px;
+        min-width: 24px;
+    }
+}
